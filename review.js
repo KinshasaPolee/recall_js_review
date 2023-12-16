@@ -34,12 +34,18 @@ const worthy = 'are love'
 const timeless = `Peace and happiness ${worthy}.`;
 console.log(timeless);
 // ================ Variable Names =================
-/* 
-    • Case-sensitive! Try it out! :O
-    • Can contain letters, digits, or the symbols $ and _
-    • Can't start with 0-9
-    • Can't use reserved keywords in JS such as var, function, return, etc. 
-*/
+
+    // • Case-sensitive! Try it out! :O
+    let pascalcase; (incorrect)
+    let pascalCase; (correct)
+    // • Can contain letters, digits, or the symbols $ and _
+        let pascal_C4ase;
+    // • Can't start with 0-9
+        let 6p$ascalCase; (incorrect)
+        let p6ascalCase; (correct)
+    // • Can't use reserved keywords in JS such as var, function, return, etc. 
+        let function; (incorrect)
+        let will_believe; (correct)
 
 // =================================================
 //                      STRINGS
