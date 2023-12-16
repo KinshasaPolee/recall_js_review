@@ -20,18 +20,22 @@
 // =================================================
 
 // 1.) Declare a variable
-
+let success;
 // 2.) Change the value of this variable
-
+let success = 'happiness';
 // 3.) Change the data type of this variable
-
+let travel = Number(success);
 // 4.) Create another variable and the one from above to concatenate
-
+let youGotThis = 'peace and';
+let result = youGotThis.concat(" ", success);
+console.log(result);
 // 5.) Use any of the variables above or create new ones and print using string interpolation
-
+const worthy = 'are love'
+const timeless = `Peace and happiness ${worthy}.`;
+console.log(timeless);
 // ================ Variable Names =================
 /* 
-    • Case-sentive! Try it out! :O
+    • Case-sensitive! Try it out! :O
     • Can contain letters, digits, or the symbols $ and _
     • Can't start with 0-9
     • Can't use reserved keywords in JS such as var, function, return, etc. 
