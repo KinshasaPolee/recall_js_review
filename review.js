@@ -54,15 +54,25 @@ console.log(timeless);
 // Look up the following string methods!
 
 // Using charAt(), print the letter i in Sabrina
-
+let nameV = 'Sabrina';
+let letter = nameV.charAt(4);
+console.log(letter);
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
-
+// Unicode: international character encoding standard that provides a unique number for every character across languages & scripts.
+let text = 'Teddy';
+let code = text.charCodeAt(text.length-3);
 // Using fromCharCode() - make it readable for us :). You'll see!
-
+let listen = String.fromCharCode(code);
+console.log(listen);
 // Take your first and last name and concat()
-
+let firstName = 'Kinshasa';
+let lastName = 'Polee';
+let fullName = firstName.concat(' ', lastName);
+console.log(fullName);
 // Create a string and make it return true using startsWith()
-
+let beautiful = 'You are Beautiful!';
+let nature = beautiful.startsWith('You');
+console.log(nature);
 // Now use any variable with endsWith() and return false
 
 // Finish the following sentence. Use includes() and return true.
