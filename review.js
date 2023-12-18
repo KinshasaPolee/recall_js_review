@@ -80,56 +80,77 @@ let nature = beautiful.endsWith(charToCheck);
 console.log(nature);
 // Finish the following sentence. Use includes() and return true.
 const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
-
+const result = ozgur.includes('Ozgur');
+console.log(result);
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
 const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
-
+const indexOfCow = joshHadALittleLambOopsCow.indexOf('cow');
+console.log(indexOfCow);
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
-
 const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
-
+const shootDown = vanessa.lastIndexOf('Vanessa');
+console.log(shootDown);
 // Can we use length for strings? I don't know, you tell me.
 const noWeCantTeo = "but did you try it out though?"
-
+const lengthForString = noWeCantTeo.length;
+console.log(lengthForString);
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
-
-// Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
+const replacementIsEasy = replaceGokuWithVegeta.replace('Goku', 'Vegeta');
+console.log(replacementIsEasy);
+// Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'.
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
-
+const foundWifey = joshIsLookingForWifey.search(/wifey/i);
+console.log(foundWifey);
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
 const pizzaSentence = "pizza, other half of pizza"
-
+const otherHalfOfPizza = pizzaSentence.slice(pizzaSentence.length / 2);
+console.log(otherHalfOfPizza);
 // Now using the pizza sentence, return only pizza (before the comma)
-
+const firstHalfOfPizza = pizzaSentence.slice(0, pizzaSentence.indexOf(','));
+console.log(firstHalfOfPizza);
 // Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. Return an array separating Yaz, Poornima, and Leshawn.
 const splitTheBill = "Yaz, Poornima, and Leshawn"
-
+const expensive = splitTheBill.split(', ');
+console.log(expensive);
 // OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
-
+const splitIntoPieces = splitTheBill.split('');
+console.log(splitIntoPieces);
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
+const happy = angry.toLowerCase();
+console.log(happy);
 // Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
-
+const tusanAngry = 'I EVERYONE AND EVERYTHING IN THIS WORLD!';
+const tusanChill = tusanAngry.toLowerCase();
+console.log(tusanChill);
 // toUpperCase()
 const jahlunSaidToPutSomeRespectToHisName = "jahlun"
-
+const noRespect = jahlunSaidToPutSomeRespectToHisName.toUpperCase();
+console.log(noRespect);
 // substring()
 // on the chopping block...
-
+const letsTryThisOut = 'on the chopping block...';
+const weGotThis = letsTryThisOut.substring(0, 5);
 // Returns "ell"
 const basicGreeting = "Hello World"
-
+const placeBackEll = placeBackEll.substring(1, 4);
+console.log(placeBackEll);
 // Returns "JavaScript"
 const ohReally = "JavaScript Substring"
-
+const giveMeThat = ohReally.substring(0, 10);
+console.log(giveMeThat);
 // Returns aol.com
 const aslDays = "xXteoWuzHereXx@aol.com"
-
+const comeOn = aslDays.indexOf('@');
+const letsDoThis = aslDays.substring(comeOn, + 1);
+console.log(letsDoThis);
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
-
+const loveHandles = '        Love Handles.       ';
+const getRidOFLoveHandles = loveHandles.trim();
+console.log(getRidOFLoveHandles);
 // =================================================
 //                     BOOLEAN
 // =================================================
