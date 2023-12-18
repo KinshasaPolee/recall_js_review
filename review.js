@@ -74,7 +74,10 @@ let beautiful = 'You are Beautiful!';
 let nature = beautiful.startsWith('You');
 console.log(nature);
 // Now use any variable with endsWith() and return false
-
+let beautiful = 'You are Beautiful!';
+let charToCheck = 'kryg';
+let nature = beautiful.endsWith(charToCheck);
+console.log(nature);
 // Finish the following sentence. Use includes() and return true.
 const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
 
