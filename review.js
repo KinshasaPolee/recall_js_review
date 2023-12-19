@@ -164,13 +164,13 @@ const b = 10;
 const c = 15;
 const d = "Keke"
 
-// console.log(a _ b)
-// console.log(c _ b)
-// console.log(d _ d)
-// console.log(d _ a)
-// console.log(a _ 15)
-// console.log(a _ b _ c)
-// console.log(c _ b _ a _ d)
+// console.log(a < b)
+// console.log(c >= b)
+// console.log(d === d)
+// console.log(d != a)
+// console.log(a <= 15)
+// console.log(a < b < c)
+// console.log(c !== b && a == d)
 
 // =================================================
 //                     LOOPS
