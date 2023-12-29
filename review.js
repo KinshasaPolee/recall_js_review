@@ -238,48 +238,67 @@ perscholas.forEach(person => {
 // =================================================
 
 // Look up the following: Make a note of what each one of these methods do
-// push()
-// pop()
-// unshift()
-// shift()
-// concat()
-// splice()
-// slice()
-// sort()
-// includes()
-// indexOf()
-// length
+// push(): adds an element to the end of an array
+// pop(): removes the last element from the end of an array
+// unshift(): adds an element to the beginning of an array
+// shift(): removes the first element from the beginning of an array
+// concat(): Combines two or more arrays 
+// splice(): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// slice(): Returns a copy of a portion of an array into a new array.
+// sort(): Sorts the elements of an array in place.
+// includes(): Returns true if the array contains a specified element; otherwise, it returns false.
+// indexOf():  Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// length: A property that returns the number of elements in an array.
 
 const fruits = ['apple', 'banana', 'orange']
 
 // Print banana
-
+console.log(fruits[1]);
 // Let's turn it up a notch. I won't tell you what array methods to use. 
-
 // Join all the elements of the array into a string separated by a space.
-
+const concatenatedString = fruits.join(' ');
+console.log(concatenatedString);
 // Remove orange
-
+fruits.pop();
+console.log(fruits);
 // Add strawberry, kiwi, and grapes at the end
-
+fruits.push('strawberry', 'kiwi', 'grapes');
+console.log(fruits);
 // Remove apple
-
+fruits.shift();
+console.log(fruits);
 // Add mango at the beginning of the array
-
+fruits.unshift('mango');
+console.log(fruits);
 // Add lemon, and grapefruit between mango and banana
-
+const indexToInsert = fruits.indexOf('banana');
+fruits.splice(indexToInsert, 0, 'lemon', 'grapefruit');
+console.log(fruits);
 // Remove banana and strawberry
-
-// Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
-
+const indexToRemoveBanana = fruits.indexOf('banana');
+const indexToRemoveStrawberry = fruits.indexOf('strawberry');
+if (indexToRemoveBanana !== -1) {
+  fruits.splice(indexToRemoveBanana, 1);
+}
+if (indexToRemoveStrawberry !== -1) {
+  fruits.splice(indexToRemoveStrawberry, 1);
+}
+console.log(fruits);
+// Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatenating fruits array and exoticFruits array.
+const exoticFruits = ['durian', 'persimmon', 'feijoa'];
+const combinedArray = fruits.concat(exoticFruits);
+console.log(combinedArray);
 // Print the last two exotic fruits without altering the newly concatenated array.
-
+const lastTwoExoticFruits = combinedArray.slice(-2);
+console.log(lastTwoExoticFruits);
 // Monalissa said she needs help re-organizing her items in alphabetical order.
 const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"]
-
+monalissaIsMessy.sort();
+console.log(monalissaIsMessy);
 // Kevin accidentally stepped into the mirror world and needs help reversing his words.
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
-
+mirrorMirrorOnTheWall.reverse();
+console.log(mirrorMirrorOnTheWall);
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
 const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
