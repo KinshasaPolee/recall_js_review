@@ -314,13 +314,20 @@ console.log(total);
 // ===== SPREAD OPERATOR ===== 
 
 // Create a variable and assign a value of a copied array using the spread operator
-
+const originalArray = [1, 2, 3, 4, 5];
+const copiedArray = [...originalArray];
+console.log(copiedArray);
 // Create two arrays with any elements and connect both of them using the spread operator. Save the connected arrays into a new variable.
-
+const array1 = [1, 2, 3];
+const array2 = ['a', 'b', 'c'];
+const connectedArray = [...array1, ...array2];
+console.log(connectedArray);
 // Using the variable with the newly connected arrays, use spread operator to add something at the end.
-
+const newArrayWithAddition = [...connectedArray, 'newElement'];
+console.log(newArrayWithAddition);
 // Using the variable with the newly connected arrays, use spread operator to add something at the beginning.
-
+const newArrayWithPrefix = ['hello', ...connectedArray, 'newElement'];
+console.log(newArrayWithPrefix);
 // ===== ACCESS =====
 
 // Donut Shopping
@@ -346,6 +353,8 @@ const donutShop = [
 ]
 
 // Anthony wants applecrumble. Print please!
+const appleCrumble = donutShop[1][0][1];
+console.log(appleCrumble);
 // Tosi wants ihatethis. :) Print!
 
 // =================================================
