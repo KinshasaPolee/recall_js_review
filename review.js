@@ -416,25 +416,70 @@ console.log(message);
 // Don't forget to call your functions :)
 
 // Create a function called sayGreeting and PRINT 'Hello, ma'amsir!'
-
+function sayGreeting() {
+  console.log('Hello, ma\'amsir!');
+}
+sayGreeting();
 // Create a function that takes a string as a parameter. PRINT 'This is my (STRING)'. Please replace the (STRING) with the parameter. Don't play with me haha.
-
-
+function printMyString(inputString) {
+  console.log('This is my ' + inputString);
+}
+printMyString('awesome string');
 // Create a function called add that takes in three number parameters. Create 3 variables and assign numerical values to them. Invoke your add() and pass in those three variables as arguments.
-
+function add(num1, num2, num3) {
+  const result = num1 + num2 + num3;
+  console.log('The sum is: ' + result);
+}
+const a = 5;
+const b = 10;
+const c = 15;
+add(a, b, c);
 // Create a function called fightClub() that accepts a name parameter.  If the name:
 // 'Teo' RETURN '1st rule: You do not talk about Fight Club.'
 // 'Manara' RETURN '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.'
 // 'Liv' RETURN '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.'
 // 'Devin' RETURN '4th rule: Only two guys to a fight.'
 // Anything else, RETURN 'No shirts
-
+function fightClub(name) {
+  if (name === 'Teo') {
+    return '1st rule: You do not talk about Fight Club.';
+  } else if (name === 'Manara') {
+    return '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.';
+  } else if (name === 'Liv') {
+    return '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.';
+  } else if (name === 'Devin') {
+    return '4th rule: Only two guys to a fight.';
+  } else {
+    return 'No shirts';
+  }
+}
+const result1 = fightClub('Liv');
+const result2 = fightClub('Devin');
+const result3 = fightClub('SomeoneElse');
+console.log(result1);
+console.log(result2);
+console.log(result3);
 // Create a function called hello() that prints 'Hello'. Return an anonymous function inside hello() and have it print 'Goodbye'. Invoke your hello function in some way to see Hello and Goodbye in the console.
-
+function hello() {
+  console.log('Hello');
+  return function() {
+    console.log('Goodbye');
+  };
+}
+const goodbyeFunction = hello();
+goodbyeFunction();
 // Create a function expression with your first name as the variable and then print your first and last name
-
+const myFirstName = function () {
+  const myLastName = 'Polee';
+  console.log('My name is ' + myFirstName + ' ' + myLastName);
+};
+myFirstName('Kinshasa');
 // Create an arrow function that accepts a number and have it return that number doubled
-
+const doubleNumber = (number) => {
+  return number * 2;
+};
+const result = doubleNumber(5);
+console.log(result);
 // =================================================
 //                     OBJECTS
 // =================================================
