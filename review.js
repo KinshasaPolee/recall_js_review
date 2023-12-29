@@ -302,10 +302,15 @@ console.log(mirrorMirrorOnTheWall);
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
 const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
-
+const badWord = "badword";
+const words = RafaelNoBadWords.split(' ');
+const filteredWords = words.filter(word => word.toLowerCase() !== badWord);
+const cleanSentence = filteredWords.join(' ');
+console.log(cleanSentence);
 // Man math is hard. Let's make our computer do it for us. Use reduce() to find the total of the numbers in numbersToAddUp
 const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
-
+const total = numbersToAddUp.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(total);
 // ===== SPREAD OPERATOR ===== 
 
 // Create a variable and assign a value of a copied array using the spread operator
