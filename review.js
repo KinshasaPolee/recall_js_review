@@ -35,17 +35,17 @@ const timeless = `Peace and happiness ${worthy}.`;
 console.log(timeless);
 // ================ Variable Names =================
 
-    // • Case-sensitive! Try it out! :O
-    let pascalcase; (incorrect)
-    let pascalCase; (correct)
-    // • Can contain letters, digits, or the symbols $ and _
-        let pascal_C4ase;
+// • Case-sensitive! Try it out! :O
+let pascalcase; (incorrect)
+let pascalCase; (correct)
+// • Can contain letters, digits, or the symbols $ and _
+let pascal_C4ase;
     // • Can't start with 0-9
         let 6p$ascalCase; (incorrect)
-        let p6ascalCase; (correct)
+let p6ascalCase; (correct)
     // • Can't use reserved keywords in JS such as var, function, return, etc. 
         let function; (incorrect)
-        let will_believe; (correct)
+let will_believe; (correct)
 
 // =================================================
 //                      STRINGS
@@ -60,7 +60,7 @@ console.log(letter);
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
 // Unicode: international character encoding standard that provides a unique number for every character across languages & scripts.
 let text = 'Teddy';
-let code = text.charCodeAt(text.length-3);
+let code = text.charCodeAt(text.length - 3);
 // Using fromCharCode() - make it readable for us :). You'll see!
 let listen = String.fromCharCode(code);
 console.log(listen);
@@ -177,30 +177,62 @@ const d = "Keke"
 // =================================================
 
 // Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
-hello()
+const numSpins = 10;
+for (let spin = 1; spin <= numSpins; spin++) {
+  console.log(`Ken's room has been spinning ${spin} times.`);
+}
 // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
-hello()
-// But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
-hello()
-// For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
+let teo = {
+  vision: {
+    spin: function () {
+      console.log("Teo's vision is spinning!");
+    }
+  }
+};
 
+for (let spinCount = 0; spinCount < 20; spinCount++) {
+  teo.vision.spin();
+}
+// But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
+let teo = {
+  say: function (message) {
+    console.log(message);
+  }
+};
+
+let apologyCount = 0;
+
+while (apologyCount < 20) {
+  teo.say("I'm sorry");
+  apologyCount++;
+}
+// For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
 // To The Left! To The Left! Everything I want in the console to the left. Print thing1, thing2, thing 3 using (FOR IN LOOP)
 const whateverQueenBeySaid = {
   thing1: 'shoes',
   thing2: 'clothes',
   thing3: 'gaming console'
+};
+for (let key in whateverQueenBeySaid) {
+  console.log(whateverQueenBeySaid[key]);
 }
-
 // Using (FOR IN LOOP), print the indexes of the array.
-const lana = ['l', 'a', 'n', 'a']
-
+const lana = ['l', 'a', 'n', 'a'];
+for (let index in lana) {
+  console.log(index);
+}
 // USE (FOR OF LOOP)!
-const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
-
+const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner'];
+for (let value of tia) {
+  console.log(value);
+}
 // Look into forEach() loop, it accepts a callback aka a function inside a function. 
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
-const perscholas = ['Amira', 'Arely', 'Jonathan']
-
+const perscholas = ['Amira', 'Arely', 'Jonathan'];
+perscholas.forEach(person => {
+  let message = "Hi! My name is " + person + ". I am a Per Scholas student.";
+  console.log(message);
+});
 // =================================================
 //                     ARRAYS
 // =================================================
@@ -268,7 +300,7 @@ const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
 // ===== ACCESS =====
 
 // Donut Shopping
-const donutShop =[
+const donutShop = [
   [
     'firecracker',
     'chocolate',
