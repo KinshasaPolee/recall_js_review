@@ -356,7 +356,8 @@ const donutShop = [
 const appleCrumble = donutShop[1][0][1];
 console.log(appleCrumble);
 // Tosi wants ihatethis. :) Print!
-
+const ihatethisFlavor = donutShop[2][0][0][0][1][0];
+console.log(ihatethisFlavor);
 // =================================================
 //                     IF/ELSE
 // =================================================
