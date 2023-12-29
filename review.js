@@ -364,11 +364,51 @@ console.log(ihatethisFlavor);
 
 // Teo is a person. I would hope so...
 // Check if Teo is a person. If true, print 'Teo is a person!' if not then print 'Teo is not a person!'
+const personName = 'Teo';
+if (personName === 'Teo') {
+  console.log('Teo is a person!');
+} else {
+  console.log('Teo is not a person!');
+}
 // If Teo is a person, check to see if he is a male or a female. If male, print 'You got it right!' if not then print 'Wrong. Teo is going to remove you from the class.'.
+const personName = 'Teo';
+const isMale = true;
+if (personName === 'Teo') {
+  console.log('Teo is a person!');
+  if (isMale) {
+    console.log('You got it right!');
+  } else {
+    console.log('Wrong. Teo is going to remove you from the class.');
+  }
+} else {
+  console.log('Teo is not a person!');
+}
 // If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'. If Teo is 'not hungry' then print 'He doesn't need to eat.'. Anything else, print 'If Teo is not hungry, am I hungry?'
-
+const personName = 'Teo';
+const isMale = true;
+const isHungry = 'hungry';
+if (personName === 'Teo') {
+  console.log('Teo is a person!');
+  if (isMale) {
+    console.log('You got it right!');
+    if (isHungry === 'hungry') {
+      console.log("Let's buy Teo some tacos!");
+    } else if (isHungry === 'not hungry') {
+      console.log("He doesn't need to eat.");
+    } else {
+      console.log("If Teo is not hungry, am I hungry?");
+    }
+  } else {
+    console.log('Wrong. Teo is going to remove you from the class.');
+  }
+} else {
+  console.log('Teo is not a person!');
+}
 // Create a if/else ternary to check if Gustavo is the coolest. If coolest, print 'You got that right!', else print 'James wants to argue. He says he's the best!'
-
+const personName = 'Gustavo';
+const isCoolest = true;
+const message = isCoolest ? 'You got that right!' : "James wants to argue. He says he's the best!";
+console.log(message);
 // =================================================
 //                     FUNCTIONS
 // =================================================
