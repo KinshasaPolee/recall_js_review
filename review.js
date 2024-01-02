@@ -170,16 +170,15 @@ const d = "Keke"
 // console.log(d != a)
 // console.log(a <= 15)
 // console.log(a < b < c)
-// console.log(c !== b && a == d)
+// console.log(c !== b && a != d)
 
 // =================================================
 //                     LOOPS
 // =================================================
 
 // Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
-const numSpins = 10;
-for (let spin = 1; spin <= numSpins; spin++) {
-  console.log(`Ken's room has been spinning ${spin} times.`);
+for (let i = 1; i<= 10 numSpins; i++) {
+  console.log(`Ken's room has been spinning ${i} times.`);
 }
 // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
 let teo = {
@@ -214,7 +213,7 @@ const whateverQueenBeySaid = {
   thing3: 'gaming console'
 };
 for (let key in whateverQueenBeySaid) {
-  console.log(whateverQueenBeySaid[key]);
+  console.log(key);
 }
 // Using (FOR IN LOOP), print the indexes of the array.
 const lana = ['l', 'a', 'n', 'a'];
